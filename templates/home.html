@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' with page="1" %}
+
+  <div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+      <h1>Hello, {{request.user.first_name}}!</h1>
+      <p>In this website you can write your piece and publish it in this page. Checkout the top right option on the navbar! Beware to register and login first!</p>
+    </div>
+
+    <!-- Example row of columns -->
+    <div class="row">
+      {% for new in news %}
+        {% include 'card/card.html' with new=new%}
+      {% endfor %}
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; Company 2022</p>
+    </footer>
+
+  </div>
+{% endblock %}

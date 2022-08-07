@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container d-flex">
+    <form class="form-horizontal well" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <div>
+        <button type="submit" class="btn btn-primary btn-large">Register</button>
+    </div>
+    </form>
+
+</div>
+{% endblock %}

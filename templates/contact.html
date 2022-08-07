@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' with page="3" %}
+
+  <div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+      <h1>Contact us, {{request.user.first_name}}!</h1>
+      <p>Contact me and (hire me)!</p>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; Company 2022</p>
+    </footer>
+
+  </div>
+{% endblock %}

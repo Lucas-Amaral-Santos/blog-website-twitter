@@ -1,0 +1,27 @@
+<div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Blog Website</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li {% if page == '1' %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
+            <li {% if page == '2' %}class="active"{% endif %}><a href="{% url 'about' %}">About</a></li>
+            <li {% if page == '3' %}class="active"{% endif %}><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div class="nav-collapse" style="float: right">
+          <ul class="nav">
+            <li class="active"><a href="{% url 'news:submit_news' %}">Add News</a></li>
+            <li class="active"><a href="{% url 'news:submit_category' %}">Add Category</a></li>
+            <li class="active"><a href="{% url 'register' %}">Register Author</a></li>
+            <li class="active"><a href="{% url 'signout' %}">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>

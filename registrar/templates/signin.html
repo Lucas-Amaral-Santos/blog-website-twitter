@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Sign-in
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container">
+    <form class="form-horizontal well" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <div>
+        <button type="submit" class="btn btn-primary btn-large">Sign-in</button>
+    </div>
+    </form>
+
+</div>
+{% endblock %}

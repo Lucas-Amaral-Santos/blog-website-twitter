@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Adding News
+{% endblock %}
+
+
+
+{% block content %}
+    {% include 'navbar.html' %}
+<div class="container d-flex">
+    
+    <form class="well" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <div>
+        <button type="submit" class="btn btn-primary btn-large">Save</button>
+    </div>
+    </form>
+
+</div>
+{% endblock %}
