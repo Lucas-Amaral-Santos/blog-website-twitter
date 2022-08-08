@@ -32,7 +32,7 @@ class News(models.Model):
     published = PublishedManager()
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.id)
+        self.slug = slugify(self.title)
         super(News, self).save(*args, **kwargs)
 
     class Meta:
