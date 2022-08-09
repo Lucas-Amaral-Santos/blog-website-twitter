@@ -1,6 +1,6 @@
 # BLOG WEBSITE TWITTER DJANGO
 
-## SETUP INSTRUCTIONS
+## FILE SYSTEM
 
 The compressed file includes the Django code named blog_website. The project is placed inside the virtual environment named blogwebsite_env. The tree view of the files are displayed next:
 
@@ -60,5 +60,9 @@ The projects has two users setup
         username: lucasamasan
         password: Elefate20@
 
-## SUBMISSION
-    This project will be sent to BIX with the environment setup using Docker 
+## DOCKER
+        You can find the Docker Repository on https://hub.docker.com/r/lucasamasan/blogwebsite-bix
+
+        ```
+        docker pull lucasamasan/blogwebsite-bix
+        ```
