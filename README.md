@@ -61,11 +61,12 @@ The projects has two users setup
         password: Elefate20@
 
 ## DOCKER
-        You can find the Docker Repository on https://hub.docker.com/r/lucasamasan/blogwebsite-bix
 
-        ```
-        docker pull lucasamasan/blogwebsite-bix
-        ```
+You can find the Docker Repository on https://hub.docker.com/r/lucasamasan/blogwebsite-bix
+
+```
+docker pull lucasamasan/blogwebsite-bix
+```
 
 
 ## LOOM
