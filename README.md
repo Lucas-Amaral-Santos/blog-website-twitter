@@ -8,7 +8,7 @@ blogwebsite_env
 |	blogwebsite 		-> The Django Project\
 |	|	.git\
 |	|	blogwebsite\
-|	|	News			-> App created for News\
+|	|	news			-> App created for News\
 |	|	registrar		-> App created for authentication\
 |	|	static		-> placing the static files \
 |	|	templates		-> generical templates that doesn’t belong to any app\
@@ -22,8 +22,13 @@ blogwebsite_env
 |	pip-selfcheck.json\
 |	pyvenv.cfg\
 
+## SETUP INSTRUCTIONS
+
 After unzipping the Project get into the root directory of the Project:
+
+```
 cd blogwebsite_env\blogwebsite
+```
 
 Activate environment:
 ```
@@ -37,3 +42,23 @@ Execute Project:
 ```
 python manage.py runserver
 ```
+
+## TESTING
+
+Github is setup to execute tests as soon as as something is pushed to master branch.
+It's executing tests on forms, models, views and urls.
+You can see the specification inside the directory /blogwebsite/news/tests/.
+
+## ACCESS
+
+The projects has two users setup
+
+1. Administrator
+        username: admin
+        password: admin
+2. Author
+        username: lucasamasan
+        password: Elefate20@
+
+## SUBMISSION
+    This project will be sent to BIX with the environment setup using Docker 
