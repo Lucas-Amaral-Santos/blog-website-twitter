@@ -66,3 +66,8 @@ The projects has two users setup
         ```
         docker pull lucasamasan/blogwebsite-bix
         ```
+
+
+## LOOM
+
+https://www.loom.com/share/fe01291f92df4e95a19420d941d3c37f
